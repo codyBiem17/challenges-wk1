@@ -474,7 +474,13 @@ footer .horizontal-line hr{
     }
 }
 
-@media only screen and  (min-width :992px) {
+@media only screen and  (min-width :1200px) {
+    .app-btns-list img {
+        max-width: 100%;
+        width: 20%;
+        height: auto;
+    }
+
     #book-table img {
         max-width: 100%;
         width: 50%;
@@ -483,8 +489,12 @@ footer .horizontal-line hr{
 
     #about-bookings img {
         max-width: 100%;
-        width: 15%;
+        width: 10%;
         height: 50%;
+    }
+
+    .email-box {
+        width: 60%;
     }
 
     footer .contact-info {
