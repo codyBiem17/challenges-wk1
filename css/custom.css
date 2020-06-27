@@ -17,7 +17,7 @@ body {
     background-color: hsl(230, 17%, 14%);
 }
 
-#top-section p:first-child{
+p.section-heading{
     font-size: 1.3em;
     font-weight: 700;
     margin: 30px auto 0;
