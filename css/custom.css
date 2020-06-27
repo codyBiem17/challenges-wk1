@@ -45,6 +45,42 @@ div.horizontal-line hr {
     font-weight: 600;
 }
 
+.social-media {
+    font-size: 2em;
+}
+
+.fab.fa-facebook-square {
+    color: hsl(208, 92%, 53%);
+}
+
+.fab.fa-twitter {
+    color: hsl(203, 89%, 53%);
+}
+
+i.fab.fa-instagram {
+    background: linear-gradient(to right,#fdc468,#df4996); 
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;   
+}
+
+.fab.fa-youtube-square {
+    color: hsl(348, 97%, 39%);
+    /* border-radius: 50px; */
+}
+
+.youtube-icon {
+    /* padding:30px;
+    border-radius: 50%;
+    background-color: yellow; */
+}
+
+span.name {
+    padding-left: 10px;
+    position: relative;
+    bottom: 5px;
+    /* letter-spacing: 1px; */
+}
+
 .year {
     font-size: 56px;
 }
@@ -53,6 +89,17 @@ div.horizontal-line hr {
     font-size: 18x;
     letter-spacing: 0.3em;
     font-weight: 400;
-    line-height: 1em;
     text-transform: uppercase;
+    position: relative;
+    bottom: 20px;
+}
+
+.fas.fa-caret-up, .insta-twit .date {
+    color: hsl(163, 72%, 41%);
+}
+
+span.date {
+    letter-spacing: 1px;
+    padding-left: 2px;
+    /* font-weight: 400; */
 }
