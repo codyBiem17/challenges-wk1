@@ -8,11 +8,20 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Challenge2-Social Media Dashboard</title>
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
     <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
+
+        <style>
+
+            form div.custom-switch {
+                /* background-color: red; */
+            }
+        </style>
 </head>
 
 <body>
@@ -20,8 +29,8 @@
         <header id="top-section">
             <div class="row">
                 <div class="col-12">
-                    <h1>Social Media Dashboard</h1>
-                    <p>Total Followers: 23,004</p>
+                    <p>Social Media Dashboard</p>
+                    <p class="other-text">Total Followers: 23,004</p>
                 </div>
                 <div class="col-12 horizontal-line">
                     <hr>
@@ -31,20 +40,25 @@
 
         <main class="main-section">
             <div class="row">
-                <div class="col-9">
-                    Dark Mode
+                <div class="col-10">
+                    <p class="other-text theme-mode">Dark Mode</p> 
                 </div>
-                <div class="col-3">
-                    Toggler
+                <div class="col-2">
+                    <form action="">
+                        <div class="custom-control custom-switch toggle-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                           <p> @nathanf </p> 
-                            <p>1987</p> 
-                            <p>Followers</p> 
+                           <p class="other-text"> @nathanf </p> 
+                            <p class="year">1987</p> 
+                            <p class="other-text followers">Followers</p> 
                             <p>12 Today</p> 
                         </div>
                     </div>
@@ -52,9 +66,9 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <p> @nathanf </p>
-                            <p>1987</p>
-                            <p>Followers</p>
+                            <p class="other-text"> @nathanf </p>
+                            <p class="year">1987</p>
+                            <p class="other-text followers">Followers</p>
                             <p>12 Today</p>
                         </div>
                     </div>
@@ -62,9 +76,9 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <p> @nathanf </p>
-                            <p>1987</p>
-                            <p>Followers</p>
+                            <p class="other-text"> @nathanf </p>
+                            <p class="year">1987</p>
+                            <p class="other-text followers">Followers</p>
                             <p>12 Today</p>
                         </div>
                     </div>
@@ -72,9 +86,9 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <p> @nathanf </p>
-                            <p>1987</p>
-                            <p>Followers</p>
+                            <p class="other-text"> @nathanf </p>
+                            <p class="year">1987</p>
+                            <p class="other-text followers">Followers</p>
                             <p>12 Today</p>
                         </div>
                     </div>
@@ -84,6 +98,218 @@
                 <div class="col-12">
                     Overview - Today
                 </div>
+
+                <!-- first card -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Page Views
+                                        </div>
+                                        <div class="col-12">
+                                            87
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Facebook
+                                        </div>
+                                        <div class="col-12">
+                                            3%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second card -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Page Views
+                                        </div>
+                                        <div class="col-12">
+                                            87
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Facebook
+                                        </div>
+                                        <div class="col-12">
+                                            3%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third card -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Page Views
+                                        </div>
+                                        <div class="col-12">
+                                            87
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Facebook
+                                        </div>
+                                        <div class="col-12">
+                                            3%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fourth card -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Page Views
+                                        </div>
+                                        <div class="col-12">
+                                            87
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Facebook
+                                        </div>
+                                        <div class="col-12">
+                                            3%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fifth card -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Page Views
+                                        </div>
+                                        <div class="col-12">
+                                            87
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Facebook
+                                        </div>
+                                        <div class="col-12">
+                                            3%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sixth card -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Page Views
+                                        </div>
+                                        <div class="col-12">
+                                            87
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Facebook
+                                        </div>
+                                        <div class="col-12">
+                                            3%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- seventh card -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Page Views
+                                        </div>
+                                        <div class="col-12">
+                                            87
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            Facebook
+                                        </div>
+                                        <div class="col-12">
+                                            3%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- eight card -->
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
@@ -117,7 +343,10 @@
     </div>
 
    
-
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <sccript src="js/custom.js"></script> -->
+    <sript src="js/bootstrapjs/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
     
 </body>
 

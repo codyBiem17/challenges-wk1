@@ -10,7 +10,7 @@
 }
 
 html, body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 #intro {
@@ -506,4 +506,13 @@ span#email-info {
         display: block;
         height: auto;
     }
+}
+
+
+
+
+/* styles for challenge 2 */
+
+.toggle-switch{
+    background-color: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
 }
