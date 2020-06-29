@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: white;
+    /* color: white; */
 }
 
 html, body{
@@ -16,8 +16,24 @@ html, body{
 
 body {
     background-color: hsl(230, 17%, 14%);
+    color: white;
 }
 
+body.maroon {
+    /* background-color: maroon; */
+}
+
+.light-mode-theme {
+    /* color: hsl(230, 17%, 14%); */
+    /* display: none; */
+}
+
+
+
+.dark-mode-theme {
+    
+    /* display: none; */
+}
 
 p.section-heading{
     font-size: 1.3em;
@@ -25,15 +41,23 @@ p.section-heading{
     margin: 30px auto 0;
 }
 
-#top-section p:last-child, .theme-mode {
+.top-section p:last-child, .theme-mode {
     font-weight: 600;
 }
 
-.other-text {
+.light-mode-theme .other-text {
+    /* color: hsl(228, 12%, 44%); */
+}
+
+.dark-mode-theme .other-text {
     color: hsl(228, 34%, 66%);
 }
 
-div.horizontal-line hr {
+.light-mode-theme .horizontal-line hr {
+    /* border-top: 1px solid hsl(228, 12%, 44%) */
+}
+
+.dark-mode-theme .horizontal-line hr {
     border-top: 1px solid hsl(228, 34%, 66%);
 }
 
@@ -46,13 +70,15 @@ div.horizontal-line hr {
     width: 3.7em;
     height: 2em;
     border-radius: 16px;
+    position: absolute;
+    top: -0.15625rem;
 }
 
 .custom-switch .custom-control-input:checked ~ 
 .custom-control-label::before{
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 1px solid hsl(230, 17%, 14%);
+  /* border: 1px solid hsl(230, 17%, 14%); */
 }
 
 .custom-control-input:not(:disabled):active ~ 
@@ -67,7 +93,7 @@ div.horizontal-line hr {
     width: 23px;
     height: 23px;
     border-radius: 50%;
-    top: calc(.15625rem + 5px);
+    top: calc(-0.15625rem + 5px);
 
 }
 
@@ -80,10 +106,27 @@ html:not([dir=rtl]) .custom-switch .custom-control-label::after {
 }
 
 .custom-control-label::before {
+    /* background: hsl(230, 22%, 74%); */
     background: linear-gradient(to right, hsl(210, 78%, 56%),
                  hsl(146, 68%, 55%));
-    border-color: hsl(230, 17%, 14%);
+    border: 0px solid
     /* padding-left: 20px; */
+}
+
+/* .custom-control-input:active~.custom-control-label::before */
+
+.custom-control-input:checked~.custom-control-label::before {
+    background: #007bff;
+}
+
+.custom-switch::before {
+    /* content: "Dark Mode";
+    color: hsl(228, 34%, 66%);
+    position: relative;
+    left: -70px;
+    top: 5px;
+    font-weight: 700; */
+    /* pos */
 }
 
 .custom-switch .custom-control-input:checked ~ 
@@ -100,7 +143,12 @@ html:not([dir=rtl]) .custom-switch .custom-control-label::after {
      border: 0px solid;
 }
 
-.card .card-body {
+.light-mode-theme .card {
+    text-align: center;
+    background-color: hsl(227, 47%, 96%);
+    font-weight: 600;
+}
+.dark-mode-theme .card {
     text-align: center;
     background-color: hsl(228, 28%, 20%);
     font-weight: 600;
@@ -108,7 +156,7 @@ html:not([dir=rtl]) .custom-switch .custom-control-label::after {
 
 .card.facebook-card::before {
     content: "";
-    height: 5px;
+    height: 3px;
     border-radius: 5px;
     display: inline-block;
     background-color: hsl(208, 92%, 53%);
@@ -117,7 +165,7 @@ html:not([dir=rtl]) .custom-switch .custom-control-label::after {
 
 .card.twitter-card::before {
     content: "";
-    height: 5px;
+    height: 3px;
     border-radius: 5px;
     display: inline-block;
     background-color: hsl(203, 89%, 53%);
@@ -126,7 +174,7 @@ html:not([dir=rtl]) .custom-switch .custom-control-label::after {
 
 .card.instagram-card::before {
     content: "";
-    height: 5px;
+    height: 3px;
     border-radius: 5px;
     display: inline-block;
     background: linear-gradient(to right,#fdc468,#df4996);
@@ -135,7 +183,7 @@ html:not([dir=rtl]) .custom-switch .custom-control-label::after {
 
 .card.youtube-card::before {
     content: "";
-    height: 5px;
+    height: 3px;
     border-radius: 5px;
     display: inline-block;
     background-color: hsl(348, 97%, 39%);
@@ -213,8 +261,21 @@ span.date {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 1200px) {
-    body {
+@media only screen and (min-width: 992px) {
+    .horizontal-line {
+        display: none;
         /* height: 500vh; */
+    }
+
+    .theme-switch {
+        display: flex;
+        justify-content: flex-end;
+        margin: 50px auto 0;
+    }
+
+    .theme-mode {
+        position: relative;
+        left: -37px;
+        top: 5px;
     }
 }

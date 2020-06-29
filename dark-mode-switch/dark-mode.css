@@ -1,0 +1,30 @@
+[data-theme="dark"] {
+  background-color: white!important;
+  color: hsl(230, 17%, 14%);
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+[data-theme="dark"] .horizontal-line hr{
+  border-top: 1px solid hsl(228, 12%, 44%)
+}
+
+[data-theme="dark"] .other-text{
+  color: hsl(228, 12%, 44%);
+}
+
+[data-theme="dark"] .card{
+  /* color: hsl(228, 34%, 66%); */
+  background-color: hsl(227, 47%, 96%) !important;
+  /* color: #eee; */
+}
