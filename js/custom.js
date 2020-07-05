@@ -1,4 +1,3 @@
-// const bodyTheme = document.getElementById("checkbox");
 
 // checkbox.addEventListener('click', () => {
 //     alert('gvcfjg')

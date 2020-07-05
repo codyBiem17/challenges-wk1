@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Challenge2-Social Media Dashboard</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
@@ -14,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
     <link rel="stylesheet" href="dark-mode-switch/dark-mode.css">
 </head>
 
@@ -388,9 +384,24 @@
 
     </div>
 
+    <script>
+        const toggleSwitch = document.getElementById("darkSwitch");
+        toggleSwitch.addEventListener('change', toggleMode, false);
+
+        function toggleMode() {
+            var isChecked = toggleSwitch.checked;
+            if (isChecked) {
+                document.querySelector('.theme-mode').innerHTML = 'Light mode'
+            }
+            else {
+                document.querySelector('.theme-mode').innerHTML = 'Dark mode'
+            }
+        }
+    </script>
+
    
     <script src="js/jquery-3.3.1.min.js"></script>
-    <sccript src="js/custom.js"></script>
+    <!-- <sccript src="js/custom.js"></script> -->
     <sript src="js/bootstrapjs/bootstrap.min.js"></script>
     <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
     <script src="dark-mode-switch/dark-mode-switch.min.js"></script>
