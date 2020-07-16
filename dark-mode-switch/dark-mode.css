@@ -19,7 +19,7 @@
   border-top: 1px solid hsl(228, 12%, 44%)
 }
 
-[data-theme="dark"] .other-text{
+[data-theme="dark"] .other-text a{
   color: hsl(228, 12%, 44%);
 }
 
@@ -27,4 +27,12 @@
   /* color: hsl(228, 34%, 66%); */
   background-color: hsl(227, 47%, 96%) !important;
   /* color: #eee; */
+}
+
+.card.github-card::before {
+  background-color: rgb(54, 54, 54)
+}
+
+.fab.fa-github-square {
+  color: rgb(54, 54, 54);
 }
