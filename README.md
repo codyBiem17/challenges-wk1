@@ -9,4 +9,4 @@ Website can be viewed at https://biemislam.github.io/challenges-wk1/
 # challenge2
 
 A mobile resbonsive Social Media Dashbord
-Website can be viewed at https://biemislam.github.io/challenges-wk1/challennge2.html
+Website can be viewed at https://biemislam.github.io/challenges-wk1/dashboard.html

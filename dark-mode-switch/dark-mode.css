@@ -29,10 +29,10 @@
   /* color: #eee; */
 }
 
-.card.github-card::before {
+[data-theme="dark"] .card.github-card::before {
   background-color: rgb(54, 54, 54)
 }
 
-.fab.fa-github-square {
+[data-theme="dark"] .fab.fa-github-square {
   color: rgb(54, 54, 54);
 }
