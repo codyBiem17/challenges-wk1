@@ -144,7 +144,8 @@ html:not([dir=rtl]) .custom-switch .custom-control-label::after {
 
 
 .card {
-     border: 0px solid;
+    border: 0px solid transparent;
+    border-radius: 7px;
 }
 
 .light-mode-theme .card {
@@ -158,42 +159,51 @@ html:not([dir=rtl]) .custom-switch .custom-control-label::after {
     font-weight: 600;
 }
 
-.card.github-card::before {
-    content: "";
+.card.github-card {
+    /* content: "";
     height: 3px;
     border-radius: 5px;
     display: inline-block;
-    background-color: white;
+    background-color: white; */
     /* background-color: hsl(208, 92%, 53%); */
     /* border-color: hsl(208, 92%, 53%); */
+    border-top: 3px solid whitesmoke;
 }
 
-.card.twitter-card::before {
-    content: "";
+.card.twitter-card {
+    /* content: "";
     height: 3px;
     border-radius: 5px;
     display: inline-block;
-    background-color: hsl(203, 89%, 53%);
-    /* border-color: hsl(208, 92%, 53%); */
+    background-color: hsl(203, 89%, 53%); */
+    border-top: 3px solid hsl(203, 89%, 53%);
 }
 
-.card.instagram-card::before {
-    content: "";
+.card.instagram-card {
+    border-image: linear-gradient(to right,#fdc468,#df4996) 5;
+    border-top: 3px solid transparent;
+    /* background: 
+        linear-gradient(to right, hsl(228, 28%, 20%), hsl(228, 28%, 20%)), 
+        linear-gradient(5deg, red , blue); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box; */
+    /* border-radius: 5px; */
+    /* content: "";
     height: 3px;
     border-radius: 5px;
     display: inline-block;
-    background: linear-gradient(to right,#fdc468,#df4996);
-    /* border-color: hsl(208, 92%, 53%); */
+    background: linear-gradient(to right,#fdc468,#df4996); */
+    /* border-top: 3px solid linear-gradient(to right,#fdc468,#df4996); */
 }
 
-.card.linkedin-card::before {
-    content: "";
+.card.linkedin-card {
+    /* content: "";
     height: 3px;
     border-radius: 5px;
     display: inline-block;
-    background-color: #0077b5;;
+    background-color: #0077b5;; */
     /* background-color: hsl(348, 97%, 39%); */
-    /* border-color: hsl(208, 92%, 53%); */
+    border-top: 3px solid hsl(348, 97%, 39%);
 }
 
 .social-media {
@@ -201,7 +211,7 @@ html:not([dir=rtl]) .custom-switch .custom-control-label::after {
 }
 
 .fab.fa-github-square {
-    color: white;
+    color: whitesmoke;
     /* color: hsl(208, 92%, 53%); */
 }
 
